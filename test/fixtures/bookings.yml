@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aptdate: 2023-01-13
+  apttime: 2023-01-13 12:50:20
+  description: MyText
+
+two:
+  aptdate: 2023-01-13
+  apttime: 2023-01-13 12:50:20
+  description: MyText
