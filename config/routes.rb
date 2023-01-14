@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :doctors
   devise_for :users
   resources :bookings
   #get 'page/home'
@@ -7,4 +8,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root 'page#home'
+  
 end

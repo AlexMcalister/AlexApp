@@ -10,11 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_13_152829) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_13_163007) do
   create_table "bookings", force: :cascade do |t|
     t.date "aptdate"
     t.time "apttime"
     t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "doctors", force: :cascade do |t|
+    t.string "firstname"
+    t.string "secondname"
+    t.string "phonenumber"
+    t.string "department"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -27,6 +36,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_13_152829) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "doctor", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
