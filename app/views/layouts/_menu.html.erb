@@ -3,6 +3,7 @@
       <%= link_to 'Register', new_user_registration_path, class: 'nav-link' %>
 <%= button_to "Log out", destroy_user_session_path, method: :delete %>
 <%= link_to 'Log In', new_user_session_path %>
+<%= link_to 'bookings', bookings_url %>
 <p>nav here</p>
 <!-- devise alerts below -->
 <p class="notice"><%= notice %></p>
