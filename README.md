@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Application is a doctors appointment booking application, users have the option to sign in or create a new account with an email and password, you must be signed in to access the booking form. there is already an account created under doctor@email.com with the password being password but feel free to create your own account it will be logged into the database which can be viewed in DB Browser SQLite. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ruby Version = 3.1.2
